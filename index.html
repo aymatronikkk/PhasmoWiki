@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phasmophobia Guide</title>
+    <style>
+        /* Base styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #1A1F2C;
+            color: #FFFFFF;
+            min-height: 100vh;
+            background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.04' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(34, 34, 38, 0.3);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 50;
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 4rem;
+        }
+
+        .nav-logo {
+            color: #9b87f5;
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.375rem;
+            transition: all 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #9b87f5;
+            background: rgba(155, 135, 245, 0.1);
+        }
+
+        .nav-link.active {
+            color: #9b87f5;
+            background: rgba(155, 135, 245, 0.1);
+        }
+
+        /* Hero section */
+        .hero {
+            padding-top: 8rem;
+            padding-bottom: 4rem;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            color: #9b87f5;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Features grid */
+        .features {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: rgba(34, 34, 38, 0.3);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 0.5rem;
+            padding: 2rem;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            color: #9b87f5;
+            margin-bottom: 1rem;
+        }
+
+        .feature-description {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .nav-links {
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="/" class="nav-logo">Phasmophobia Guide</a>
+                <div class="nav-links">
+                    <a href="ghosts.html" class="nav-link">Ghosts</a>
+                    <a href="maps.html" class="nav-link">Maps</a>
+                    <a href="equipment.html" class="nav-link">Equipment</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1 class="hero-title">Welcome to Phasmophobia Guide</h1>
+            <p class="hero-subtitle">Ваш главный ресурс для успешной охоты на призраков. Узнайте о различных призраках, картах и снаряжении, чтобы стать мастером охоты на призраков.</p>
+        </section>
+
+        <section class="features">
+            <a href="ghosts.html" class="nav-link">
+                <div class="feature-card">
+                    <h2 class="feature-title">Ghost Types</h2>
+                    <p class="feature-description">Узнайте о различных типах призраков, их поведении и доказательствах, необходимых для их идентификации.</p>
+                </div>
+            </a>
+            <a href="maps.html" class="nav-link">
+                <div class="feature-card">
+                    <h2 class="feature-title">Maps</h2>
+                    <p class="feature-description">Изучите подробную информацию обо всех доступных картах и их уникальных характеристиках.</p>
+                </div>
+            </a>
+            <a href="equipment.html" class="nav-link">
+                <div class="feature-card">
+                    <h2 class="feature-title">Equipment</h2>
+                    <p class="feature-description">Освойте использование различного снаряжения и инструментов для охоты на привидений.</p>
+                </div>
+            </a>
+        </section>
+    </main>
+</body>
+
+</html>

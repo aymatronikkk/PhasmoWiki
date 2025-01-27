@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phasmophobia Equipment</title>
+    <style>
+        /* Base styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #1A1F2C;
+            color: #FFFFFF;
+            min-height: 100vh;
+            background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.04' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* Navigation styles from index.html */
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(34, 34, 38, 0.3);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 50;
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 4rem;
+        }
+
+        .nav-logo {
+            color: #9b87f5;
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.375rem;
+            transition: all 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #9b87f5;
+            background: rgba(155, 135, 245, 0.1);
+        }
+
+        /* Equipment styles */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 6rem 1rem 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .title {
+            font-size: 2.25rem;
+            color: #9b87f5;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 1rem;
+        }
+
+        .equipment-card {
+            background: rgba(34, 34, 38, 0.3);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .equipment-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .equipment-name {
+            color: #9b87f5;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .equipment-price {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .equipment-description {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.875rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="/" class="nav-logo">Phasmophobia Guide</a>
+                <div class="nav-links">
+                    <a href="ghosts.html" class="nav-link">Ghosts</a>
+                    <a href="maps.html" class="nav-link">Maps</a>
+                    <a href="equipment.html" class="nav-link">Equipment</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="header">
+            <h1 class="title">Equipment</h1>
+            <p class="subtitle">Essential tools for ghost hunting</p>
+        </header>
+
+        <div class="equipment-grid">
+            <div class="equipment-card">
+                <h2 class="equipment-name">EMF Reader</h2>
+                <p class="equipment-price">Price: $45</p>
+                <p class="equipment-description">Detects electromagnetic fields. Essential for identifying ghost activity and gathering evidence.</p>
+            </div>
+
+            <div class="equipment-card">
+                <h2 class="equipment-name">Spirit Box</h2>
+                <p class="equipment-price">Price: $50</p>
+                <p class="equipment-description">Used to communicate with ghosts through voice recognition. Some ghosts will respond to questions.</p>
+            </div>
+
+            <div class="equipment-card">
+                <h2 class="equipment-name">Video Camera</h2>
+                <p class="equipment-price">Price: $50</p>
+                <p class="equipment-description">Records ghost orbs and other paranormal activity. Can be viewed through the van's monitoring system.</p>
+            </div>
+
+            <div class="equipment-card">
+                <h2 class="equipment-name">UV Flashlight</h2>
+                <p class="equipment-price">Price: $35</p>
+                <p class="equipment-description">Reveals fingerprints and footprints left by the ghost. Essential for gathering evidence.</p>
+            </div>
+
+            <div class="equipment-card">
+                <h2 class="equipment-name">D.O.T.S Projector</h2>
+                <p class="equipment-price">Price: $65</p>
+                <p class="equipment-description">Projects a grid of dots that can reveal ghost silhouettes when they pass through it.</p>
+            </div>
+
+            <div class="equipment-card">
+                <h2 class="equipment-name">Ghost Writing Book</h2>
+                <p class="equipment-price">Price: $40</p>
+                <p class="equipment-description">Place this book in the ghost room to potentially capture ghost writing as evidence.</p>
+            </div>
+
+            <div class="equipment-card">
+                <h2 class="equipment-name">Thermometer</h2>
+                <p class="equipment-price">Price: $30</p>
+                <p class="equipment-description">Measures room temperature. Useful for detecting freezing temperatures, which is a type of ghost evidence.</p>
+            </div>
+
+            <div class="equipment-card">
+                <h2 class="equipment-name">Crucifix</h2>
+                <p class="equipment-price">Price: $30</p>
+                <p class="equipment-description">Can prevent a ghost from entering hunt mode when placed nearby. Has two charges before breaking.</p>
+            </div>
+
+            <div class="equipment-card">
+                <h2 class="equipment-name">Salt</h2>
+                <p class="equipment-price">Price: $15</p>
+                <p class="equipment-description">Place on the ground to track ghost movement. Some ghosts will leave footprints in the salt.</p>
+            </div>
+
+            <div class="equipment-card">
+                <h2 class="equipment-name">Smudge Sticks</h2>
+                <p class="equipment-price">Price: $15</p>
+                <p class="equipment-description">When lit, will prevent the ghost from hunting temporarily and can be used to escape during a hunt.</p>
+            </div>
+
+            <div class="equipment-card">
+                <h2 class="equipment-name">Motion Sensor</h2>
+                <p class="equipment-price">Price: $100</p>
+                <p class="equipment-description">Detects movement and alerts you when something passes through its detection zone.</p>
+            </div>
+
+            <div class="equipment-card">
+                <h2 class="equipment-name">Sound Sensor</h2>
+                <p class="equipment-price">Price: $80</p>
+                <p class="equipment-description">Detects and measures sound in its vicinity. Useful for tracking ghost activity.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
